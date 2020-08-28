@@ -31,6 +31,7 @@ public class home_page01
 			System.out.println(e.getMessage());
 			}
 		
+		//comment added
 		act.click(logout).build().perform();
 		
 		try {
@@ -38,7 +39,6 @@ public class home_page01
 			} catch (InterruptedException e) {
 			System.out.println(e.getMessage());
 			}
-
 	}
 
 }
