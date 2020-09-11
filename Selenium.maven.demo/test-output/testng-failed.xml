@@ -3,14 +3,19 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.web.testcases.login_test_with_utilities">
+      <class name="Practice.login">
         <methods>
-          <include name="tearDownMethod"/>
-          <include name="XAP_logout" invocation-numbers="0"/>
-          <include name="TestSuite"/>
-          <include name="settings"/>
+          <include name="checkbox_default"/>
+          <include name="Page_Title"/>
+          <include name="checkbox_uncheck"/>
+          <include name="valid_login"/>
+          <include name="tear_down"/>
+          <include name="invalid_login_and_error_message"/>
+          <include name="suitr"/>
+          <include name="lost_password_link"/>
+          <include name="set_up"/>
         </methods>
-      </class> <!-- com.web.testcases.login_test_with_utilities -->
+      </class> <!-- Practice.login -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

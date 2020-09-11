@@ -15,7 +15,7 @@ import com.web.utilities.ExcelData_Provider;
 
 public class login_test_with_utilities extends BaseClass
 {	
-	/*@Test(description = "Veify page title",priority = 1)
+	@Test(description = "Veify page title",priority = 1)
 	public void XAP_page_title() throws InterruptedException
 	{
 		logger=extent.createTest("Page Title");		
@@ -52,8 +52,7 @@ public class login_test_with_utilities extends BaseClass
 			}
 			else
 				{	
-					logger.fail("Error text do not match");
-					
+					logger.fail("Error text do not match");					
 				}
 	}
 	
@@ -78,7 +77,7 @@ public class login_test_with_utilities extends BaseClass
 			
 	}*/
 	
-	@Test(dataProvider ="ExcelData")
+	@Test(dataProvider ="ExcelData",priority = 4)
 	public void XAP_logout(String uname1,String pwd1)
 	{
 		login_page01 obj=new login_page01(driver);

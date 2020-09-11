@@ -4,17 +4,15 @@ import java.io.File;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
-import com.aventstack.extentreports.reporter.configuration.ExtentHtmlReporterConfiguration;
 import com.web.utilities.BrowserConfig_01;
 import com.web.utilities.ConfigData_Provider;
 import com.web.utilities.ExcelData_Provider;
@@ -40,10 +38,12 @@ ExtentTest logger;
 		extent.attachReporter(reporter);	
 	}
 	
+	@Parameters({"browser"})
 	@BeforeMethod
-	public void settings()
+	public void settings(String browser)
 	{		
-		driver=BrowserConfig_01.BrowserConfig_detail(driver,cp.getBrowser(),cp.getURL());
+		driver=BrowserConfig_01.BrowserConfig_detail(driver,browser,cp.getURL());
+		//driver=BrowserConfig_01.BrowserConfig_detail(driver,cp.getBrowser(),cp.getURL());
 	// if we don't initialize this statement to driver then quit_Browser will take the global variable which has null value
 	// and will throw javanullpointer exception
 	}
@@ -72,13 +72,13 @@ ExtentTest logger;
 	public Object[][] data()
 	{
 		ExcelData_Provider obj=new ExcelData_Provider();
-		int rows=obj.rowCount(0);		
+		int rows=obj.rowCount(2);		
 		Object[][] data=new Object[rows][2];
 		
 		for(int i=0;i<rows;i++)
 		{
-			data[i][0]=obj.cell_row(0,i, 0);
-			data[i][1]=obj.cell_row(0,i, 1);
+			data[i][0]=obj.cell_row(2,i, 0);
+			data[i][1]=obj.cell_row(2,i, 1);
 		}		
 		return data;				
 	}
