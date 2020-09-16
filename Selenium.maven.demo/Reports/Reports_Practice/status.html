@@ -43,7 +43,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Sep 11, 2020 03:31:46 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Sep 16, 2020 02:04:20 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -59,6 +59,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -101,10 +102,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>3</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='50%'>3</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -125,14 +126,338 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify login page title</span>
-						<span class='test-time'>Sep 11, 2020 03:32:36 PM</span>
+						<span class='test-time'>Sep 16, 2020 02:05:17 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Sep 11, 2020 03:32:36 PM</span>
-	<span class='label end-time'>Sep 11, 2020 03:32:36 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+	<span class='label start-time'>Sep 16, 2020 02:05:17 PM</span>
+	<span class='label end-time'>Sep 16, 2020 02:05:18 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+34ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>2:05:18 PM</td>
+				<td class='step-details'>
+						Action when page title match, working as expected
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>2:05:18 PM</td>
+				<td class='step-details'>
+						Title match, expected behaviour
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify the default checbox</span>
+						<span class='test-time'>Sep 16, 2020 02:05:39 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 16, 2020 02:05:39 PM</span>
+	<span class='label end-time'>Sep 16, 2020 02:05:47 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 8s+35ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>2:05:40 PM</td>
+				<td class='step-details'>
+						Verify checkobx is enabled
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>2:05:40 PM</td>
+				<td class='step-details'>
+						Checkbox is enabled, expected behaviour
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>2:05:47 PM</td>
+				<td class='step-details'>
+						Verify checbox is clickable
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>2:05:47 PM</td>
+				<td class='step-details'>
+						Checbox is clickable, expected behaviour
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify the checbox is unchecked</span>
+						<span class='test-time'>Sep 16, 2020 02:06:15 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 16, 2020 02:06:15 PM</span>
+	<span class='label end-time'>Sep 16, 2020 02:06:28 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 12s+961ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>2:06:28 PM</td>
+				<td class='step-details'>
+						Verify checbox is unchecked
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>2:06:28 PM</td>
+				<td class='step-details'>
+						Checkbox unchecked, expected behaviour
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify invalid login and error message</span>
+						<span class='test-time'>Sep 16, 2020 02:06:44 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 16, 2020 02:06:44 PM</span>
+	<span class='label end-time'>Sep 16, 2020 02:07:35 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 50s+436ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>2:07:35 PM</td>
+				<td class='step-details'>
+						Login not success
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>2:07:35 PM</td>
+				<td class='step-details'>
+						Incorrect credential. no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),"Sign out")]"}
+  (Session info: chrome=85.0.4183.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HANDIQUE-PC', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\HANDIQUE\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57757}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: c260ddeecf91d8772ead027e777130ad
+*** Element info: {Using=xpath, value=//*[contains(text(),"Sign out")]}
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>2:07:35 PM</td>
+				<td class='step-details'>
+						Verify error message
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>2:07:35 PM</td>
+				<td class='step-details'>
+						Error message do not match, log defect. expected [Error: A user could not be found with this email address.1] but found [Error: A user could not be found with this email address.]
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify lost password link and navigation</span>
+						<span class='test-time'>Sep 16, 2020 02:07:53 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 16, 2020 02:07:53 PM</span>
+	<span class='label end-time'>Sep 16, 2020 02:08:16 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 23s+92ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>2:07:56 PM</td>
+				<td class='step-details'>
+						Verify link is enabled
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>2:07:56 PM</td>
+				<td class='step-details'>
+						Link is enabled, expected behaviour
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>2:08:10 PM</td>
+				<td class='step-details'>
+						Verify lost password page display
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>2:08:10 PM</td>
+				<td class='step-details'>
+						Lost password page not displayed, log a defect. expected [true] but found [false]
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>2:08:16 PM</td>
+				<td class='step-details'>
+						Verify login page display
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>2:08:16 PM</td>
+				<td class='step-details'>
+						Login page not displayed, log a defect. expected [true] but found [false]
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify login with valid credentials</span>
+						<span class='test-time'>Sep 16, 2020 02:08:39 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 16, 2020 02:08:39 PM</span>
+	<span class='label end-time'>Sep 16, 2020 02:09:36 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 56s+636ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>2:09:36 PM</td>
+				<td class='step-details'>
+						Action for invalid login
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>2:09:36 PM</td>
+				<td class='step-details'>
+						Incorrect credential. no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),"Sign out")]"}
+  (Session info: chrome=85.0.4183.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HANDIQUE-PC', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\HANDIQUE\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57933}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 2814b68530b451922f74172250290483
+*** Element info: {Using=xpath, value=//*[contains(text(),"Sign out")]}
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
 </div>
 					</div>
 				</li>
@@ -165,7 +490,7 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>6</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -177,13 +502,13 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Sep 11, 2020 03:31:46 PM</div>
+					<div class='panel-lead'>Sep 16, 2020 02:04:20 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Sep 11, 2020 03:31:46 PM</div>
+			 		<div class='panel-lead'>Sep 16, 2020 02:04:20 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -200,13 +525,13 @@
 		<!-- container -->
 		<script>
 			var statusGroup = {
-				passParent: 1,
-				failParent: 0,
+				passParent: 3,
+				failParent: 3,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 3,
 				
 				passChild: 0,
 				failChild: 0,
@@ -231,7 +556,7 @@
 		</script>
 		<script>
 			var timeline = {
-			        "Verify login page title":0
+			        "Verify login page title":1.034,"Verify the default checbox":8.035,"Verify the checbox is unchecked":12.961,"Verify invalid login and error message":50.436,"Verify lost password link and navigation":23.092,"Verify login with valid credentials":56.636
 			};
 		</script>
 		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/master/v3html/js/extent.js' type='text/javascript'></script>

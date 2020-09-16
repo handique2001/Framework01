@@ -21,16 +21,15 @@ import com.web.utilities.Helper;
 public class BaseClass {
 
 WebDriver driver;   // has null value since not initialized
-ExcelData_Provider dp;
+//ExcelData_Provider dp;
 ConfigData_Provider cp;
 ExtentReports extent;
 ExtentTest logger;
 
-
 	@BeforeSuite
 	public void TestSuite()
 	{
-		dp=new ExcelData_Provider();
+		//dp=new ExcelData_Provider();
 		cp=new ConfigData_Provider();
 		
 		ExtentHtmlReporter reporter=new ExtentHtmlReporter(new File(System.getProperty("user.dir")+"./Reports/demo6.html"));	
@@ -42,7 +41,8 @@ ExtentTest logger;
 	@BeforeMethod
 	public void settings(String browser)
 	{		
-		driver=BrowserConfig_01.BrowserConfig_detail(driver,browser,cp.getURL());
+		driver=BrowserConfig_01.BrowserConfig_detail(driver, browser, cp.getURL());
+		//driver=BrowserConfig_01.BrowserConfig_detail(driver,browser,cp.getURL());
 		//driver=BrowserConfig_01.BrowserConfig_detail(driver,cp.getBrowser(),cp.getURL());
 	// if we don't initialize this statement to driver then quit_Browser will take the global variable which has null value
 	// and will throw javanullpointer exception
@@ -54,8 +54,7 @@ ExtentTest logger;
 		if(result.getStatus()==ITestResult.FAILURE)
 		{
 			Helper.ScreenShot_capture(driver);
-			System.out.println("Failure screenshot captured");	
-					
+			System.out.println("Failure screenshot captured");						
 		}
 		else if(result.getStatus()==ITestResult.SUCCESS)
 		{
@@ -69,11 +68,11 @@ ExtentTest logger;
 	}
 	
 	@DataProvider(name = "ExcelData")
-	public Object[][] data()
+	public String[][] data()
 	{
 		ExcelData_Provider obj=new ExcelData_Provider();
 		int rows=obj.rowCount(2);		
-		Object[][] data=new Object[rows][2];
+		String[][] data=new String[rows][2];
 		
 		for(int i=0;i<rows;i++)
 		{

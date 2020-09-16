@@ -1,89 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+<testng-results skipped="2" failed="0" ignored="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="227438" started-at="2020-09-11T07:50:06Z" finished-at="2020-09-11T07:53:53Z">
+  <suite name="Default suite" duration-ms="314" started-at="2020-09-14T08:45:28Z" finished-at="2020-09-14T08:45:28Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="227438" started-at="2020-09-11T07:50:06Z" finished-at="2020-09-11T07:53:53Z">
-      <class name="Practice.login">
-        <test-method status="PASS" signature="suitr()[pri:0, instance:Practice.login@604ed9f0]" name="suitr" is-config="true" duration-ms="358" started-at="2020-09-11T07:50:06Z" finished-at="2020-09-11T07:50:06Z">
+    <test name="Default test" duration-ms="314" started-at="2020-09-14T08:45:28Z" finished-at="2020-09-14T08:45:28Z">
+      <class name="com.web.testcases.login_test_with_utilities">
+        <test-method status="PASS" signature="TestSuite()[pri:0, instance:com.web.testcases.login_test_with_utilities@7cd62f43]" name="TestSuite" is-config="true" duration-ms="4259" started-at="2020-09-14T08:45:24Z" finished-at="2020-09-14T08:45:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- suitr -->
-        <test-method status="PASS" signature="set_up()[pri:0, instance:Practice.login@604ed9f0]" name="set_up" is-config="true" duration-ms="15527" started-at="2020-09-11T07:50:06Z" finished-at="2020-09-11T07:50:22Z">
+        </test-method> <!-- TestSuite -->
+        <test-method status="FAIL" signature="settings(java.lang.String)[pri:0, instance:com.web.testcases.login_test_with_utilities@7cd62f43]" name="settings" is-config="true" duration-ms="0" started-at="2020-09-14T08:45:28Z" finished-at="2020-09-14T08:45:28Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeMethod on method settings but has not been marked @Optional or defined
+in C:\Users\HANDIQUE\AppData\Local\Temp\testng-eclipse--1283916120\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeMethod on method settings but has not been marked @Optional or defined
+in C:\Users\HANDIQUE\AppData\Local\Temp\testng-eclipse--1283916120\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:290)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- set_up -->
-        <test-method status="PASS" signature="Page_Title()[pri:0, instance:Practice.login@604ed9f0]" name="Page_Title" duration-ms="86" started-at="2020-09-11T07:50:22Z" finished-at="2020-09-11T07:50:22Z">
+        </test-method> <!-- settings -->
+        <test-method status="SKIP" signature="XAP_page_title()[pri:1, instance:com.web.testcases.login_test_with_utilities@7cd62f43]" name="XAP_page_title" duration-ms="0" started-at="2020-09-14T08:45:28Z" description="Veify page title" finished-at="2020-09-14T08:45:28Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeMethod on method settings but has not been marked @Optional or defined
+in C:\Users\HANDIQUE\AppData\Local\Temp\testng-eclipse--1283916120\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeMethod on method settings but has not been marked @Optional or defined
+in C:\Users\HANDIQUE\AppData\Local\Temp\testng-eclipse--1283916120\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:290)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Page_Title -->
-        <test-method status="PASS" signature="tear_down()[pri:0, instance:Practice.login@604ed9f0]" name="tear_down" is-config="true" duration-ms="5141" started-at="2020-09-11T07:50:22Z" finished-at="2020-09-11T07:50:27Z">
+        </test-method> <!-- XAP_page_title -->
+        <test-method status="SKIP" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.web.testcases.login_test_with_utilities@7cd62f43]" name="tearDownMethod" is-config="true" duration-ms="0" started-at="2020-09-14T08:45:28Z" finished-at="2020-09-14T08:45:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tear_down -->
-        <test-method status="PASS" signature="set_up()[pri:0, instance:Practice.login@604ed9f0]" name="set_up" is-config="true" duration-ms="11829" started-at="2020-09-11T07:50:27Z" finished-at="2020-09-11T07:50:39Z">
+        </test-method> <!-- tearDownMethod -->
+        <test-method status="SKIP" signature="settings(java.lang.String)[pri:0, instance:com.web.testcases.login_test_with_utilities@7cd62f43]" name="settings" is-config="true" duration-ms="0" started-at="2020-09-14T08:45:28Z" finished-at="2020-09-14T08:45:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- set_up -->
-        <test-method status="PASS" signature="checkbox_default()[pri:0, instance:Practice.login@604ed9f0]" name="checkbox_default" duration-ms="7270" started-at="2020-09-11T07:50:39Z" finished-at="2020-09-11T07:50:46Z">
+        </test-method> <!-- settings -->
+        <test-method status="SKIP" signature="XAP_logout(java.lang.String, java.lang.String)[pri:4, instance:com.web.testcases.login_test_with_utilities@7cd62f43]" name="XAP_logout" duration-ms="0" started-at="2020-09-14T08:45:28Z" data-provider="ExcelData" finished-at="2020-09-14T08:45:28Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeMethod on method settings but has not been marked @Optional or defined
+in C:\Users\HANDIQUE\AppData\Local\Temp\testng-eclipse--1283916120\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeMethod on method settings but has not been marked @Optional or defined
+in C:\Users\HANDIQUE\AppData\Local\Temp\testng-eclipse--1283916120\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:290)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkbox_default -->
-        <test-method status="PASS" signature="tear_down()[pri:0, instance:Practice.login@604ed9f0]" name="tear_down" is-config="true" duration-ms="3079" started-at="2020-09-11T07:50:46Z" finished-at="2020-09-11T07:50:49Z">
+        </test-method> <!-- XAP_logout -->
+        <test-method status="SKIP" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.web.testcases.login_test_with_utilities@7cd62f43]" name="tearDownMethod" is-config="true" duration-ms="0" started-at="2020-09-14T08:45:28Z" finished-at="2020-09-14T08:45:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tear_down -->
-        <test-method status="PASS" signature="set_up()[pri:0, instance:Practice.login@604ed9f0]" name="set_up" is-config="true" duration-ms="12131" started-at="2020-09-11T07:50:49Z" finished-at="2020-09-11T07:51:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- set_up -->
-        <test-method status="PASS" signature="checkbox_uncheck()[pri:0, instance:Practice.login@604ed9f0]" name="checkbox_uncheck" duration-ms="12728" started-at="2020-09-11T07:51:01Z" finished-at="2020-09-11T07:51:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkbox_uncheck -->
-        <test-method status="PASS" signature="tear_down()[pri:0, instance:Practice.login@604ed9f0]" name="tear_down" is-config="true" duration-ms="2986" started-at="2020-09-11T07:51:14Z" finished-at="2020-09-11T07:51:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tear_down -->
-        <test-method status="PASS" signature="set_up()[pri:0, instance:Practice.login@604ed9f0]" name="set_up" is-config="true" duration-ms="12391" started-at="2020-09-11T07:51:17Z" finished-at="2020-09-11T07:51:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- set_up -->
-        <test-method status="PASS" signature="invalid_login_and_error_message()[pri:0, instance:Practice.login@604ed9f0]" name="invalid_login_and_error_message" duration-ms="47366" started-at="2020-09-11T07:51:29Z" finished-at="2020-09-11T07:52:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalid_login_and_error_message -->
-        <test-method status="PASS" signature="tear_down()[pri:0, instance:Practice.login@604ed9f0]" name="tear_down" is-config="true" duration-ms="3579" started-at="2020-09-11T07:52:17Z" finished-at="2020-09-11T07:52:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tear_down -->
-        <test-method status="PASS" signature="set_up()[pri:0, instance:Practice.login@604ed9f0]" name="set_up" is-config="true" duration-ms="12239" started-at="2020-09-11T07:52:20Z" finished-at="2020-09-11T07:52:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- set_up -->
-        <test-method status="PASS" signature="lost_password_link()[pri:0, instance:Practice.login@604ed9f0]" name="lost_password_link" duration-ms="14866" started-at="2020-09-11T07:52:32Z" finished-at="2020-09-11T07:52:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- lost_password_link -->
-        <test-method status="PASS" signature="tear_down()[pri:0, instance:Practice.login@604ed9f0]" name="tear_down" is-config="true" duration-ms="3191" started-at="2020-09-11T07:52:47Z" finished-at="2020-09-11T07:52:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tear_down -->
-        <test-method status="PASS" signature="set_up()[pri:0, instance:Practice.login@604ed9f0]" name="set_up" is-config="true" duration-ms="12543" started-at="2020-09-11T07:52:50Z" finished-at="2020-09-11T07:53:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- set_up -->
-        <test-method status="PASS" signature="valid_login()[pri:0, instance:Practice.login@604ed9f0]" name="valid_login" duration-ms="47437" started-at="2020-09-11T07:53:03Z" finished-at="2020-09-11T07:53:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- valid_login -->
-        <test-method status="PASS" signature="tear_down()[pri:0, instance:Practice.login@604ed9f0]" name="tear_down" is-config="true" duration-ms="2993" started-at="2020-09-11T07:53:50Z" finished-at="2020-09-11T07:53:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tear_down -->
-      </class> <!-- Practice.login -->
+        </test-method> <!-- tearDownMethod -->
+      </class> <!-- com.web.testcases.login_test_with_utilities -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
